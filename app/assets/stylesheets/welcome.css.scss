@@ -29,11 +29,11 @@ body, html {
   background-color: white;
 }
 
-
-
 table {
   width: 100%;
   height: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 td {
