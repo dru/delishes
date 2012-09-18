@@ -8,6 +8,8 @@ server 'rukodelish.es', :app, :web, :db, :primary => true
 set :user, "#{application}"
 set :deploy_to, "/home/#{application}/www"
 
+set :stage, "production"
+
 set :scm, :git
 set :ssh_options, { :forward_agent => true }
 set :use_sudo, false
