@@ -14,6 +14,10 @@ set :use_sudo, false
 
 set :shared_children, shared_children << 'tmp/sockets'
 
+set :default_environment, {
+  'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+}
+
 namespace :deploy do
   desc "Start the application"
   task :start, :roles => :app, :except => { :no_release => true } do
